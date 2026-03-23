@@ -3,10 +3,3 @@
     { "source": "/api/:path*", "destination": "/api/[...path]" }
   ]
 }
-```
-
-**4.** **Commit changes** → **Commit changes**
-
-**5.** 1~2분 기다린 후 (Vercel이 자동으로 재배포합니다) 다시 테스트:
-```
-https://bg-proxy.vercel.app/api/v2/mix/market/tickers?productType=USDT-FUTURES
