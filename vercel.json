@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/[...path]" }
+  ]
+}
+```
+
+**6.** **Commit changes** → **Commit changes**
+
+Vercel은 GitHub에 파일이 추가되면 **자동으로 재배포**합니다. 1~2분 기다린 후 다시 테스트:
+```
+https://bg-proxy.vercel.app/api/v2/mix/market/tickers?productType=USDT-FUTURES
